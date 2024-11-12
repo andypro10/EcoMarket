@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="customer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-customer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number">998-232-134</span>
+                    </div>
+                </div>
+                <div class="container-logo">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h1 class=""><a href="#">EcoMarket</a></h1>
+                </div>
+                <div class="container-user">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#section1" class="smooth-scroll">Mejores Productos</a></li>
+                    <li><a href="#section2" class="smooth-scroll">Mejores Categorías</a></li>
+                    <li><a href="#section3" class="smooth-scroll">Nuestra Galería</a></li>
+                    <li><a href="#section4" class="smooth-scroll">Especiales</a></li>
+                    <li><a href="#section5" class="smooth-scroll">Últimas Visitas</a></li>
+                </ul>
+
+                <form class="search-form">
+                    <input type="seach" placeholder="Buscar...">
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="content-banner">
+            <p>Frutas Frescas</p>
+            <h2>100% Natural <br>Verduras Frescas</h2>
+            <a href="#">Comprar ahora</a>
+        </div>
+    </section>
+    <main class="main-content">
+        <section class="container container-features">
+            <div class="card-feature">
+                <i class="fa-solid fa-plane"></i>
+                <div class="feature-content">
+                    <span>Envío gratuito</span>
+                    <p>En pedido superior a S/150</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="feature-content">
+                    <span>Contareembolso</span>
+                    <p>100% Garantía de devolucoón de dinero</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i class="fa-solid fa-gift"></i>
+                <div class="feature-content">
+                    <span>Tarjeta regalo especial</span>
+                    <p>Ofrece bonos especiales con regalo</p>
+                </div>
+            </div>
+            <div class="card-feature">
+                <i class="fa-solid fa-phone"></i>
+                <div class="feature-content">
+                    <span>Servicio al cliente todo el dia</span>
+                    <p>Llámenos al 983-234-232</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container top-categories" id="section2">
+            <h1 class="heading-1">Mejores Categorías</h1>
+            <div class="container-categories">
+                <div class="card-category category-frutas">
+                    <p>Frutas</p>
+                    <span>Ver más</span>
+                </div>
+                <div class="card-category category-verduras">
+                    <p>Verduras</p>
+                    <span>Ver más</span>
+                </div>
+                <div class="card-category category-semillas">
+                    <p>Semillas</p>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container top-products" id="section1">
+            <h1 class="heading-1">Mejores Productos</h1>
+            <div class="container-options">
+                <span class="active">Destacados</span>
+                <span>Más Recientes</span>
+                <span>Más vendidos</span>
+            </div>
+            <div class="container-products">
+                <!-- producto 1 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./image/banan.png" alt="Banana" height="180px">
+                        <span class="discount">-13%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Banana</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">S/4.90 <span>S/7.00</span></p>
+                        <div class="details">
+                            <p>Más detalles del producto...</p>
+                        </div>
+                        <div class="btn-read-more" onclick="toggleDetails(this)">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+                <!-- producto 2 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./image/manzana.png" alt="Manzana" height="180px">
+                        <span class="discount">-50%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Manzana</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">S/2.50 <span>S/5.00</span></p>
+                        <div class="details">
+                            <p>Más detalles del producto...</p>
+                        </div>
+                        <div class="btn-read-more" onclick="toggleDetails(this)">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+                <!-- producto 3 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./image/naranja.png" alt="Naranja" height="180px">
+                        <span class="discount">-10%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Naranja</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">S/5.20 <span>S/6.00</span></p>
+                        <div class="details">
+                            <p>Más detalles del producto...</p>
+                        </div>
+                        <div class="btn-read-more" onclick="toggleDetails(this)">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+                <!-- producto 4 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./image/melon.png" alt="Melon" height="180px">
+                        <span class="discount">-35%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Melón</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">S/2.90 <span>S/4.00</span></p>
+                        <div class="details">
+                            <p>Más detalles del producto...</p>
+                        </div>
+                        <div class="btn-read-more" onclick="toggleDetails(this)">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="section3">
+            <img src="./image/arandanos.jpg" alt="" class="gallery-img-1">
+            <img src="./image/duraznos.jpg" alt="" class="gallery-img-2">
+            <img src="./image/tomate.jpg" alt="" class="gallery-img-3">
+            <img src="./image/fresas.jpg" alt="" class="gallery-img-4">
+            <img src="./image/mandarinas.jpg" alt="" class="gallery-img-5">
+        </section>
+
+        <section class="container specials" id="section4">
+            <h1 class="heading-1">Especiales</h1>
+            <div class="container-products">
+                <!-- producto 1 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./image/banan.png" alt="Banana" height="180px">
+                        <span class="discount">-13%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Banana</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">S/4.90 <span>S/7.00</span></p>
+                        <div class="details">
+                            <p>Más detalles del producto...</p>
+                        </div>
+                        <div class="btn-read-more" onclick="toggleDetails(this)">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+                <!-- producto 2 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./image/manzana.png" alt="Manzana" height="180px">
+                        <span class="discount">-50%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Manzana</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">S/2.50 <span>S/5.00</span></p>
+                        <div class="details">
+                            <p>Más detalles del producto...</p>
+                        </div>
+                        <div class="btn-read-more" onclick="toggleDetails(this)">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+                <!-- producto 3 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./image/naranja.png" alt="Naranja" height="180px">
+                        <span class="discount">-10%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Naranja</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">S/5.20 <span>S/6.00</span></p>
+                        <div class="details">
+                            <p>Más detalles del producto...</p>
+                        </div>
+                        <div class="btn-read-more" onclick="toggleDetails(this)">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+                <!-- producto 4 -->
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./image/melon.png" alt="Melon" height="180px">
+                        <span class="discount">-35%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-regular fa-eye"></i>
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Melón</h3>
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">S/2.90 <span>S/4.00</span></p>
+                        <div class="details">
+                            <p>Más detalles del producto...</p>
+                        </div>
+                        <div class="btn-read-more" onclick="toggleDetails(this)">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- blogs -->
+        <section class="container blogs" id="section5">
+            <h1 class="heading-1">Útlimas Visitas</h1>
+            <div class="container-blogs">
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="./image/blog1.jpg" alt="">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>lorem, ipsum dolor sit</h3>
+                        <span>29 noviembre 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in dolore accusantium quae enim fuga quod molestiae, amet quibusdam alias, hic optio eaque! Placeat, adipisci laudantium ad minima accusamus suscipit?</p>
+                        <div class="btn-read-more">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="./image/blog2.jpg" alt="">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>lorem, ipsum dolor sit</h3>
+                        <span>29 noviembre 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in dolore accusantium quae enim fuga quod molestiae, amet quibusdam alias, hic optio eaque! Placeat, adipisci laudantium ad minima accusamus suscipit?</p>
+                        <div class="btn-read-more">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+                <div class="card-blog">
+                    <div class="container-img">
+                        <img src="./image/blog3.jpg" alt="">
+                        <div class="button-group-blog">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-link"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-blog">
+                        <h3>lorem, ipsum dolor sit</h3>
+                        <span>29 noviembre 2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat in dolore accusantium quae enim fuga quod molestiae, amet quibusdam alias, hic optio eaque! Placeat, adipisci laudantium ad minima accusamus suscipit?</p>
+                        <div class="btn-read-more">
+                            Leer más
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="contact-form">
+        <form>
+            <span class="heading">Contáctanos</span>
+            <label for="name">Nombre:</label>
+            <input type="text" required="" placeholder="Escribe tu nombre">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="" placeholder="Escribe tu correo">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required="" placeholder="Escribe tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li>Dirección: Ucayali - Huánuco</li>
+                        <li>Teléfono: 932-324-231</li>
+                        <li>Email: ecomarket@support.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </span>
+                        <span class="pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </span>
+                        <span class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="information">
+                    <p class="title-footer">
+                        Información
+                    </p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Información Delivery</a></li>
+                        <li><a href="#">Politicas y privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="my-account">
+                    <p class="title-footer">
+                        Mi cuenta
+                    </p>
+                    <ul>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Historial de ordenes</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Boletín</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <p class="title-footer">
+                        Suscripciones
+                    </p>
+                    <div class="content">
+                        <p>
+                            Suscríbete a nuestros servicios y mantente al dia con nuevos productos y ofertas exclusivas.
+                        </p>
+                        <input type="email" placeholder="Ingresa un coreo">
+                        <button>Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Desarrollado por Andres Cardenas &copy; 2024
+                </p>
+
+                <img src="./image/pagos.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/d747c59721.js" crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
